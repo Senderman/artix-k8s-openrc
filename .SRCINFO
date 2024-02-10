@@ -1,0 +1,66 @@
+pkgbase = kube-apiserver-openrc
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/Senderman/artix-k8s-openrc/
+	arch = any
+	license = Apache-2.0
+	source = kube-apiserver.initd
+	source = kube-apiserver.confd
+	source = kube-apiserver.logrotated
+	source = kube-controller-manager.initd
+	source = kube-controller-manager.confd
+	source = kube-controller-manager.logrotated
+	source = kube-proxy.initd
+	source = kube-proxy.confd
+	source = kube-proxy.logrotated
+	source = kube-scheduler.initd
+	source = kube-scheduler.confd
+	source = kube-scheduler.logrotated
+	source = kubelet.initd
+	source = kubelet.confd
+	source = kubelet.logrotated
+	sha256sums = d9eb05ed778cd2b34a516574d012e28cfecc8b1700ae5bf65aea98c2940968a2
+	sha256sums = 41c807a6b97b5cb309fb83a9c201956849d9e26da160825cc14e64aaa258e327
+	sha256sums = 27232cac89ee8436333872e1e89e82a3708fe25dd91c110e828387c700e9cf29
+	sha256sums = cf375447de499b8013e03671e38169190ee2228e328627d67a7f865655c35801
+	sha256sums = ea2466e1bb38bae00f5aed7980ede874916f09cd5e8c9dc814b9f75e5f7dd310
+	sha256sums = d6a51d4753956b17c6b308a9e831bbe9553c3ea33cf9cdb47e01d1f1942e487d
+	sha256sums = e7c0743815fb5dccffdda96e70c88968c21c0419bdfb4e064b292659c03249c5
+	sha256sums = a64f7683e165325c7ea27d75f1072a9aab33f3bb6dbd3cde10c62e0e39cc4876
+	sha256sums = 30da28b2de73b267ba209ae37c63f34f7a8997b1a151795161eb728b960b2cac
+	sha256sums = beaa7928565cef3b0b73f7d30f3e21b950631431c6ba6593bbaded16e7c4927f
+	sha256sums = 113c237335b8b103a6173ff9a01cfd5071d94880e90057f6494b61ab98d5c1a8
+	sha256sums = 03458ca43bf70c5991caa6a47ed8b796592a958a06eb2db6d734f196920dfd79
+	sha256sums = c7b5bf2d08fe24ea418ebca691bad90f7396bc9e5a7aca44325ab0b492500010
+	sha256sums = d8485ed172676093c8feb9e31471f1654709de7c1e5cb4d003bafabeb0665d1d
+	sha256sums = 1e2547a1ab5fe31037b6180fab1d0cda1a34c4718d99c6e3002b2db80fb3d048
+
+pkgname = kube-apiserver-openrc
+	pkgdesc = Kubernetes - kube-apiserver (OpenRC init scripts)
+	depends = openrc
+	depends = kube-apiserver
+	provides = init-kube-apiserver
+
+pkgname = kube-controller-manager-openrc
+	pkgdesc = Kubernetes - kube-controller-manager (OpenRC init scripts)
+	depends = openrc
+	depends = kube-controller-manager
+	provides = init-kube-controller-manager
+
+pkgname = kube-proxy-openrc
+	pkgdesc = Kubernetes - kube-proxy (OpenRC init scripts)
+	depends = openrc
+	depends = kube-proxy
+	provides = init-kube-proxy
+
+pkgname = kube-scheduler-openrc
+	pkgdesc = Kubernetes - kube-scheduler (OpenRC init scripts)
+	depends = openrc
+	depends = kube-scheduler
+	provides = init-kube-scheduler
+
+pkgname = kubelet
+	pkgdesc = Kubernetes - kubelet (OpenRC init scripts)
+	depends = openrc
+	depends = kubelet
+	provides = init-kubelet
