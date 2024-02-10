@@ -59,7 +59,7 @@ pkgname = kube-scheduler-openrc
 	depends = kube-scheduler
 	provides = init-kube-scheduler
 
-pkgname = kubelet
+pkgname = kubelet-openrc
 	pkgdesc = Kubernetes - kubelet (OpenRC init scripts)
 	depends = openrc
 	depends = kubelet

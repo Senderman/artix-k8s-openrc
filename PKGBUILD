@@ -5,7 +5,7 @@ pkgname=(
     kube-controller-manager-openrc
     kube-proxy-openrc
     kube-scheduler-openrc
-    kubelet
+    kubelet-openrc
 )
 
 pkgver=1.0.0
@@ -96,7 +96,7 @@ package_kube-scheduler-openrc(){
     install-pkg 'kube-scheduler' "$pkgdir"
 }
 
-package_kubelet(){
+package_kubelet-openrc(){
     pkgdesc="Kubernetes - kubelet (OpenRC init scripts)"
     depends=('openrc' 'kubelet')
     provides=('init-kubelet')
